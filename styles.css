@@ -106,7 +106,7 @@ body {
 }
 
 .blue-btn {
-  padding: 20px;
+  padding: 15px;
   border-radius: 40px;
   background-color: rgb(142, 161, 225);
   color: white;
@@ -128,7 +128,6 @@ body {
   > * {
     height: 100%;
     align-content: center;
-    padding: 0 10px;
   }
 }
 
@@ -293,7 +292,7 @@ footer {
     margin: 0 0 20px 0;
   }
 
-  img {
+  .ita-flag {
     width: 20px;
   }
 
@@ -305,13 +304,17 @@ footer {
     margin-right: 15px;
   }
 
+  #divisor > .container {
+    margin: 0;
+  }
+
   .blue-txt {
     color: rgb(114, 137, 218);
   }
 
-  .container {
+  #footer-top > .container {
     align-items: flex-start;
-    margin: 100px 0 100px 0;
+    margin: 100px 0 20px 0;
   }
 
   .black-bg {
@@ -338,23 +341,8 @@ footer {
   width: 40%;
 }
 
-#line {
-  width: 80%;
+hr {
+  width: 100%;
   height: 2px;
   background-color: rgb(114, 137, 218);
-}
-
-.content#footer-bottom {
-  align-items: flex-end;
-  > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    height: 60px;
-
-    > * {
-      height: fit-content;
-    }
-  }
 }
