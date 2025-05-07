@@ -5,30 +5,30 @@
     border: 1px dashed black;
   }
 
-  /* header {
+  header {
     background-color: rgb(173, 216, 230);
-  } */
+  }
 
-  /* .container {
+  .container {
     background-color: rgb(218, 165, 32);
-  } */
+  }
 
-  /* .content.hero {
+  .content.hero {
     background-color: rgb(0, 0, 139);
-  } */
+  }
 
-  /* .jumbo {
+  .jumbo {
     background-color: rgb(238, 130, 238);
     height: 250px;
-  } */
+  }
 
-  /* .image {
+  .image {
     background-color: rgb(30, 144, 255);
-  } */
+  }
 
-  /* .description {
+  .description {
     background-color: rgb(255, 192, 203);
-  } */
+  }
 
   .image-big {
     background-color: rgb(34, 139, 34);
@@ -61,6 +61,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  list-style: none;
 }
 
 h1 {
@@ -73,6 +74,10 @@ h2 {
 
 h3 {
   font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 a {
@@ -203,7 +208,6 @@ body {
       align-items: center;
       flex-wrap: nowrap;
       gap: 5%;
-      list-style: none;
       flex-grow: 2;
     }
 
@@ -229,10 +233,6 @@ main {
 
   .white-bg {
     background-color: white;
-    /* background-image: url("./img/wave.svg");
-    background-size: 100% 20px;
-    background-repeat: no-repeat;
-    background-position: 50% 100%; */
   }
 
   .wave {
@@ -255,10 +255,6 @@ main {
 
   .gray-bg {
     background-color: rgb(211, 211, 211);
-  }
-
-  .black-bg {
-    background-color: rgb(35, 39, 42);
   }
 
   .container.final {
@@ -289,6 +285,49 @@ main {
 /* #region Footer */
 
 footer {
+  color: white;
+
+  h3,
+  div,
+  li {
+    margin: 0 0 20px 0;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  p {
+    display: inline;
+  }
+
+  i {
+    margin-right: 15px;
+  }
+
+  .blue-txt {
+    color: rgb(114, 137, 218);
+  }
+
+  .container {
+    align-items: flex-start;
+    margin: 100px 0 100px 0;
+  }
+
+  .black-bg {
+    background-color: rgb(35, 39, 42);
+  }
+
+  .big-footer-box {
+    flex-grow: 2;
+    margin: 0;
+    height: 100%;
+  }
+
+  .small-footer-box {
+    margin: 0;
+    flex-grow: 1;
+  }
 }
 
 .image {
@@ -299,23 +338,10 @@ footer {
   width: 40%;
 }
 
-hr {
-  width: 100%;
+#line {
+  width: 80%;
   height: 2px;
-  background-color: rgb(211, 211, 211);
-}
-
-.content#footer-top > .container {
-  margin-top: 10px;
-  height: 400px;
-}
-
-.big-footer-box {
-  flex-grow: 2;
-}
-
-.small-footer-box {
-  flex-grow: 1;
+  background-color: rgb(114, 137, 218);
 }
 
 .content#footer-bottom {
