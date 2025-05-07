@@ -61,7 +61,14 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 a {
@@ -91,7 +98,6 @@ body {
 
 .title {
   font-weight: 700;
-  font-size: 3.5rem;
 }
 
 .container {
@@ -99,7 +105,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 65%;
-  height: 320px;
   font-size: large;
   max-width: 1280px;
 
@@ -166,7 +171,8 @@ body {
     align-items: center;
 
     .white-btn {
-      padding: 5px;
+      padding: 10px;
+      font-size: 1rem;
     }
 
     .logo {
@@ -203,6 +209,45 @@ body {
 /* #region Main */
 
 main {
+  .description {
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .white-bg {
+    background-color: white;
+    /* background-image: url("./img/wave.svg");
+    background-size: 100% 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%; */
+  }
+
+  .wave {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+
+  .filter-gray {
+    transform: scaleX(-1);
+    filter: invert(90%) sepia(0%) saturate(75%) hue-rotate(177deg)
+      brightness(95%) contrast(92%);
+  }
+
+  .filter-white {
+    top: 10px;
+    filter: invert(100%) sepia(0%) saturate(25%) hue-rotate(70deg)
+      brightness(108%) contrast(108%);
+  }
+
+  .gray-bg {
+    background-color: rgb(211, 211, 211);
+  }
+
+  .black-bg {
+    background-color: rgb(35, 39, 42);
+  }
 }
 
 /* #endregion Main */
@@ -212,18 +257,6 @@ main {
 .container,
 .image-big {
   margin: 30px 0 30px;
-}
-
-.white-bg {
-  background-color: white;
-}
-
-.gray-bg {
-  background-color: rgb(211, 211, 211);
-}
-
-.black-bg {
-  background-color: rgb(35, 39, 42);
 }
 
 .image {
